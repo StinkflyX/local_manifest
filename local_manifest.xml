@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Remotes -->
+ <remote name="StinkflyX"
+         fetch="https://github.com/StinkflyX" />
+ <remote name="Uni"
+         fetch="https://github.com/GhostMaster69-dev" />
+
+ <!-- Trees -->
+ <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="StinkflyX" revision="lineage-18.1" />
+ <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="StinkflyX" revision="lineage-18.1" />
+ <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="Uni" revision="12" />
+
+</manifest>
