@@ -8,7 +8,9 @@
          fetch="https://github.com/GhostMaster69-dev" />
  <remote name="cosmic"
          fetch="https://gitlab.com/GhostMaster69-dev"
-         revision="master" />      
+         revision="master" />
+ <remote name="StinkflyX-Project"
+         fetch="https://github.com/StinkflyX-Project" />
 
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="StinkflyX" revision="lineage-18.1" />
@@ -17,5 +19,13 @@
  
  <!-- Cosmic clang Toolchain -->
  <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" remote="cosmic" />
+
+ <!-- Hals -->
+ <remove-project name="LineageOS/android_hardware_qcom_audio" />
+ <remove-project name="LineageOS/android_hardware_qcom_display" />
+ <remove-project name="LineageOS/android_hardware_qcom_media" /> 
+ <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" remote="StinkflyX-Project" revision="sc-v2-caf-msm8996" /> 
+ <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" remote="StinkflyX-Project" revision="sc-v2-caf-msm8996" />
+ <project path="hardware/qcom-caf/msm8996/media" name="android_hardware_qcom_media" remote="StinkflyX-Project" revision="sc-v2-caf-msm8996" />
 
 </manifest>
